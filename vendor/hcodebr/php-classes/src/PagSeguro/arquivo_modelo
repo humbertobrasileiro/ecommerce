@@ -1,0 +1,80 @@
+<payment>
+    <mode>default</mode>
+    <method>creditCard</method>
+    <sender>
+        <name>Jose Comprador</name>
+        <email>comprador@sandbox.pagseguro.com.br</email>
+        <phone>
+            <areaCode>11</areaCode>
+            <number>30380000</number>
+        </phone>
+        <documents>
+            <document>
+                <type>CPF</type>
+                <value>22111944785</value>
+            </document>
+        </documents>
+        <hash>{{hash_do_comprador}}</hash>
+    </sender>
+    <currency>BRL</currency>
+    <notificationURL>https://sualoja.com.br/notificacao</notificationURL>
+    <items>
+        <item>
+            <id>1</id>Notebook Prata</description>
+            <quantity>1</quantity>
+            <amount>10300.00</amount>
+            <id>2</id>
+            <description>Notebook Azul</description>
+            <quantity>1</quantity>
+            <amount>10000.00</amount>
+        </item>
+    </items>
+<extraAmount>0.00</extraAmount>
+    <reference>R123456</reference>
+<shippingAddressRequired>true</shippingAddressRequired>
+    <shipping>
+        <address>
+            <street>Av. Brigadeiro Faria Lima</street>
+            <number>1384</number>
+            <complement>1 andar</complement>
+            <district>Jardim Paulistano</district>
+            <city>Sao Paulo</city>
+            <state>SP</state>
+            <country>BRA</country>
+            <postalCode>01452002</postalCode>
+        </address>
+        <type>1</type>
+        <cost>1.00</cost>
+    </shipping>
+    <creditCard>
+        <token>{{token_do_cartao}}</token>
+       <installment>
+             <quantity>2</quantity>
+            <value>5.23</value>
+        </installment>
+        <holder>
+            <name>Nome impresso no cartao</name>
+            <documents>
+                <document>
+                    <type>CPF</type>
+                    <value>22111944785</value>
+                </document>
+            </documents>
+            <birthDate>20/10/1980</birthDate>
+            <phone>
+                <areaCode>11</areaCode>
+                <number>999991111</number>
+            </phone>
+        </holder>
+        <billingAddress>
+            <street>Av. Brigadeiro Faria Lima</street>
+            <number>1384</number>
+            <complement>1 andar</complement>
+            <district>Jardim Paulistano</district>
+            <city>Sao Paulo</city>
+            <state>SP</state>
+            <country>BRA</country>
+            <postalCode>01452002</postalCode>
+        </billingAddress>
+    </creditCard>
+</payment>

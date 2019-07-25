@@ -1,0 +1,20 @@
+{
+    "name": "humbertobrasileiro/ecommerce",
+    "authors": [
+        {
+            "name": "Carlos Humberto Brasileiro Toscano",
+            "email": "humbertobtoscano@gmail.com"
+        }
+    ],
+    "require": {
+    	"phpmailer/phpmailer":"5.2.22",
+    	"slim/slim":"2.0",
+    	"rain/raintpl":"3.0.0",
+        "guzzlehttp/guzzle":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
+        }
+    }
+}
